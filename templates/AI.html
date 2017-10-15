@@ -11,11 +11,11 @@
     <title>Indagator</title>
 
     <!-- Bootstrap core CSS -->
-    <link href= "static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href= "static/css/business-frontpage.css" rel= "stylesheet">
-
+    <link href= "static/css/business-frontpage.css">
+  
   </head>
 
   <body>
@@ -23,34 +23,65 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href=" index.html ">Indagator</a>
-
+        <a class="navbar-brand" href="index.html">Indagator</a>
+        
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+          
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href = " index.html ">Home
+              <a class="nav-link" href = " index">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href=" AI.html "> AI</a> <!-- this page links to the upload page -->
+              <a class="nav-link" href=" AI">AI</a> <!-- this page links to the upload page -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href=" About.html ">About</a>
-            </li> qA
+              <a class="nav-link" href=" About">About</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Page Content -->
+   
+      <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">What We Do</h2>
+          <h3> Please upload a portrait of any loved one that is missing! We at {COMPANY NAME} are committed to looking
+            for your loved one. Please have hope!</h3>
+          <p>
+            
+            
+          </p>
+            
+          <p>
+            <form action = "http://localhost:5000/uploader" method = "POST" 
+            enctype = "multipart/form-data">
+                <input type = "file" name = "file" />
+                <input type = "submit"/>
+            </form>
+       
+              
+          </p>
+        </div>
+      </div>
+    </div>
     <!-- /.container -->
-    <br>
-<h1 align = "center">Results </h1>
-<h4 align = "left">Best match:</h4>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="static/vendor/jquery/jquery.min.js"></script>
